@@ -30,6 +30,7 @@
 }
 
 *{
+    font-size: 15px;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -58,6 +59,7 @@ header p:first-child{
 }
 
 h1{
+    font-size: xx-large;
     color:var(Very_Dark_Blue);
 }
 
@@ -103,7 +105,8 @@ header h1:second-child{
     margin: 0 20px 20px 20px;
 }
 
-.card h3{
+.card h2{
+    font-size: large;
     margin-bottom: 10px;
 }
 
@@ -114,16 +117,29 @@ header h1:second-child{
 
 
 
-@media screen and (max-width: 375px){
-
-    body{
-        background-color: var(--Very_Light_Gray);
-        margin: 5vh auto;
-        height: 100vh;
-        width: 100%;
-    }
+@media (max-width: 700px){
     .container{
         display: flex;
         flex-direction: column;
+        gap: 20px
+    }
+
+    .card{
+        border-top: 4px solid #ccc;
+        margin-bottom:20px ;
+        border-radius: 7px;
+        padding:30px 20px 20px 30px;
+        height: 190px;
+        width:270px;
+        box-shadow: 0px 9px 26px 0px rgba(0,0,0,0.1);
+    }
+
+    .container p{
+        width: 280px;
+        margin-right: 30px;
+    }
+
+    #description{
+        padding: 0 25px;
     }
 }
